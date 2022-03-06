@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+    Creando Pastel
+    </title>
+    
+</head>
+
+<style>
+    body {
+      background-color: rgb(97, 171, 182);
+      
+    }
+    header {
+        height: 100px;
+        background-color: rgba(46, 6, 156, 0.925);
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+       /* background-image:url('./images/ultimopasazul.jpg');
+        background-repeat: no-repeat;
+        background-size: 100px 100px;*/
+        
+    }
+</style>
+
+
+<body>
+    <header>
+        <h1>Pastelito Azul</h1>
+
+    </header>
+    <!-- Headings -->
+    <!-- h1 style="color: blue"> <center>Pastelito Azul</center></h1 -->
+    <h2>Bienvenido Crea tu pastel ... Pero antes por favor, proporcionanos tus datos. </h2>
+    <h4> Si eres nuestro cliente solo tu ID</h4>
+    
+    <label for="nombre" class="Nvo-label-class"> Tu ID :
+        <input type="text" maxlength="20" class="nuevaclase" id="ID" name="TuID" placeholder="Tu ID" required href="./crealo.html">
+    </label>  
+    
+    <div class="form-group">
+        <br> 
+        <label for="nombre" class="col-sm-2 control-label">Nombre :
+            <input type="text" maxlength="20" class="form-control  input-sm" id="nombre" name="nombre" placeholder="Nombre Completo" required>
+        </label>
+
+        <label for="calle" class="col-sm-2 control-label">Calle :
+            <input type="text" maxlength="60" class="form-control  input-sm" id="Calle" name="Calle" placeholder="Calle" required>
+        </label>
+
+        <label for="dirnumeroint" class="col-sm-2 control-label">Numero :
+            <input type="text" maxlength="10" class="form-control  input-sm" id="dirnumero" name="dirnumero" placeholder="Numero" required>
+        </label>
+        <br> 
+        <label for="colonia" class="col-sm-2 control-label">Colonia:
+            <input type="text" maxlength="20" class="form-control  input-sm" id="colonia" name="colonia" placeholder="Colonia" required>
+        </label>
+
+        <label for="CP" class="col-sm-2 control-label">CP :
+            <input type="text" maxlength="60" class="form-control  input-sm" id="CP" name="CP" placeholder="Codigo Postal" required>
+        </label>
+
+        <label for="Telefono" class="col-sm-2 control-label">Telefono :
+            <input type="text" maxlength="10" class="form-control  input-sm" id="Telefono" name="Telefono" placeholder="Num Telefono" required>
+        </label>
+        
+    </div>    
+   <!--
+    <div>
+        <br>
+        <input type="button" id="boton2" name="boton2" value="Lanza Pedido" onclick="alert('Pedido Recibido');"><br><br>
+    </div>
+    <form action="./PastelIndex.html">
+        <input type="submit" value="Regresar" />
+    </form>
+    -->
+    
+    <hr>  
+    <h2> Esta es tu creación</h2>
+    <form action="./PastelIndex.html" method="POST">
+        <label for="nombre">Para cuentas personas</label>
+        <input value="20" type="text" id="nombre" name="lala" placeholder="Aproximado de personas invitadas..." />
+        <br>
+        <h3>Tipo de harina</h3>
+            <input type="radio" id="blanca" name="harinas" value="blanca">
+            <label for="blanca">Blanca</label>
+            <input type="radio" id="integral" name="harinas" value="integral">
+            <label for="integral">Integral</label>
+            <input type="radio" id="mixta" name="harinas" value="mixta">
+            <label for="mixta">Mixta</label>
+        <br>
+        <h3>Sabores</h3>
+            <ul>
+                <li>Vainilla ........... $ 100</li>
+                <li>Chocolate .......... $ 120</li>
+                <li>Fresa .............. $  80</li>
+            </ul>
+            <input type="checkbox" id="vainilla" name="sabores1" value="vainilla">
+            <label for="vainilla">Vainilla</label>
+            <input type="checkbox" id="chocolate" name="sabores2" value="chocolate">
+            <label for="verde">Chocolate</label>
+            <input type="checkbox" id="fresa" name="sabores3" value="fresa">
+            <label for="fresa">Fresa</label>
+        <br>
+        <h3>Tipo de adorno</h3>
+            <ul>
+                <li>Fondant ........... $ 100</li>
+                <li>Impresion .......... $ 120</li>
+                <li>Acrilico .............. $  80</li>
+                <li>Frutas .............. $  90</li>
+            </ul>
+            <input type="checkbox" id="topping1" name="topping1" value="Fondant">
+            <label for="topping1">Fondant</label>
+            <input type="checkbox" id="topping2" name="topping2" value="ImpresionArroz">
+            <label for="topping2">Impresion hoja de arroz</label>
+            <input type="checkbox" id="topping3" name="topping3" value="Acrilico">
+            <label for="topping3">Adorno acrilico</label>
+            <input type="checkbox" id="topping4" name="topping4" value="Frutas">
+            <label for="topping3">Frutas</label><br><br>
+
+
+        <label for="apellido">Tema del pastel</label>
+        <input value="Boda" type="text" id="apellido" name="apellido" placeholder="como sera el adorno..." />
+        <h4>Tienes una foto del pastel deseado, subela</h4>
+        <input type="file" id="archivo1" name="archivo1" multiple>
+
+        <h4>Fecha de entrega requerida</h4>
+        <input type="date" id="fecha1" name="fecha1"><br>
+        <label for="comentario">Tienes una indicación extra para nosotros:</label>
+        <textarea cols="50" rows="10" id="comentario" placeholder="ingrese comentario" name="comentario"></textarea>
+        <br>
+        
+
+        <button type="button" onclick="alert('Pedido Recibido');">Lanza Pedido</button>
+        <button type="reset">Borrar datos</button>
+        <button type="submit">Pág Principal</button>
+    </form>
+    <!--
+    <hr> 
+        <form action="./PastelIndex.html" id="form1" method="post">
+            <br>
+            <input type="button" id="boton1" name="boton1" value="Lanza Pedido" onclick="" ><br><br>
+            <input type="submit" value="Submit">
+            <input type="reset">
+            
+        </form>
+        <form action="./PastelIndex.html">
+            <input type="submit" value="Regresar" />
+        </form>
+    -->
+</body>
+</html>

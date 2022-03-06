@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+    Ordenes
+    </title>
+    
+</head>
+
+<style>
+    body {
+      background-color: rgb(97, 171, 182);
+      
+    }
+    header {
+        height: 100px;
+        background-color: rgba(46, 6, 156, 0.925);
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+       /* background-image:url('./images/ultimopasazul.jpg');
+        background-repeat: no-repeat;
+        background-size: 100px 100px;
+       */
+        
+    }
+    table, th, td {
+            border: 2px solid black;
+    }
+    
+</style>
+
+
+<body>
+    <header>
+        
+        <h2>Pastelito Azul</h2>
+
+    </header>
+    <!-- Headings -->
+    <!-- h1 style="color: blue"> <center>Pastelito Azul</center></h1 -->
+    <h2>Bienvenido Chef deseamos que tengas un gran dia, estas son las ordenes pendientes. </h2>
+    <h3>Por favor revisa nuestro inventario para asegurar cualquier faltante</h3>
+    <hr>
+    <hr>
+    <form action="./PastelIndex.html" id="form1" method="post">
+        <h3>Exitencia harina</h3>
+            <input type="checkbox" id="blanca" name="harinas1" value="blanca" checked>
+            <label for="blanca">Blanca</label>
+            <input type="checkbox" id="integral" name="harinas2" value="integral">
+            <label for="integral">Integral</label>
+            <input type="checkbox" id="mixta" name="harinas3" value="mixta">
+            <label for="mixta">Mixta</label>
+        <h3>Existencia Sabores</h3>
+            <input type="checkbox" id="vainilla" name="sabores1" value="vainilla" checked="Yes">
+            <label for="vainilla">Vainilla</label>
+            <input type="checkbox" id="chocolate" name="sabores2" value="chocolate">
+            <label for="verde">Chocolate</label>
+            <input type="checkbox" id="fresa" name="sabores3" value="fresa">
+            <label for="fresa">Fresa</label>
+        <h3>Existencias adornos</h3>
+            <input type="checkbox" id="topping1" name="topping1" value="Fondant" checked>
+            <label for="topping1">Fondant</label>
+            <input type="checkbox" id="topping2" name="topping2" value="ImpresionArroz" checked>
+            <label for="topping2">Impresion hoja de arroz</label>
+            <input type="checkbox" id="topping3" name="topping3" value="Acrilico" checked>
+            <label for="topping3">Adorno acrilico</label>
+            <input type="checkbox" id="topping4" name="topping4" value="Frutas" checked>
+            <label for="topping3">Frutas</label><br><br>
+        <hr>
+        <hr>
+        <h2>Fila de ordenes pendientes </h2>
+        <!-- Aqui va el codigo para la tabla-->
+        <table style="width: 500px;">
+            <thead>
+                <tr>
+                    <th>N° Pedido</th>
+                    <th>N° Personas</th>
+                    <th>Harina</th>
+                    <th>Sabores</th>
+                    <th>Adornos</th>
+                    <th>Tema</th>
+                    <th>Fecha entrega</th>
+                    <th>Fotografía</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>20</td>
+                    <td>Integral</td>
+                    <td>Fresa</td>
+                    <td>Fondant</td>
+                    <td>Cumpleaños</td>
+                    <td>08-03-2022</td>
+                    <td><img src="images/Algusto.jpg" width="80px" height="80px"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>300</td>
+                    <td>Mixta</td>
+                    <td>Fresa</td>
+                    <td>Fondant, Acrilico, Frutas</td>
+                    <td>Boda</td>
+                    <td>18-03-2022</td>
+                    <td><img src="./images/boda.jpg" width="80px" height="80px"></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>50</td>
+                    <td>Mixta</td>
+                    <td>Fresa</td>
+                    <td>Fondant, Acrilico, Frutas</td>
+                    <td>Bautizo</td>
+                    <td>22-03-2022</td>
+                    <td><img src="images/pastel-bautizo.jpg" width="80px" height="80px"></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                    <td>4</td>
+                    <td>100</td>
+                    <td>Mixta</td>
+                    <td>Fresa</td>
+                    <td>Fondant, Impresion</td>
+                    <td>Despedida Soltera</td>
+                    <td>01-04-2022</td>
+                    <td><img src="images/despedida.jpg" width="80px" height="80px"></td>
+            </tfoot>
+        </table>
+        
+        <label for="comentario">Comentario diarios del chef:</label>
+        <textarea cols="50" rows="3" id="comentario" placeholder="ingrese comentario" name="comentario"></textarea>
+        <br>
+        
+
+        <button type="button" onclick="alert('Comentario almacenado');">Guarda comentario</button>
+        <!-- <button type="reset">Borrar datos</button> -->
+        <button type="submit">Pág Principal</button>
+    </form>
+    
+</body>
+</html>
+
+
+
+
+

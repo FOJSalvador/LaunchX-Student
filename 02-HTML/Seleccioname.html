@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+    Seleccioname
+    </title>
+    
+</head>
+
+<style>
+    body {
+      background-color: rgb(147, 233, 245);
+      
+    }
+</style>
+
+
+<body>
+    <!-- Headings -->
+    <h1 style="color: blue"> <center>Pastelito Azul</center></h1>
+    <h2>Bienvenido Selecciona tu pastel ... Pero antes por favor, proporcionanos tus datos. </h2>
+    <h4> Si eres nuestro cliente solo tu ID</h4>
+    
+    <label for="nombre" class="Nvo-label-class"> Tu ID :
+        <input type="text" maxlength="20" class="nuevaclase" id="ID" name="TuID" placeholder="Tu ID" required href="./crealo.html">
+    </label>  
+    
+    <div class="form-group">
+        <br> 
+        <label for="nombre" class="col-sm-2 control-label">Nombre :
+            <input type="text" maxlength="20" class="form-control  input-sm" id="nombre" name="nombre" placeholder="Nombre Completo" required>
+        </label>
+
+        <label for="calle" class="col-sm-2 control-label">Calle :
+            <input type="text" maxlength="60" class="form-control  input-sm" id="Calle" name="Calle" placeholder="Calle" required>
+        </label>
+
+        <label for="dirnumeroint" class="col-sm-2 control-label">Numero :
+            <input type="text" maxlength="10" class="form-control  input-sm" id="dirnumero" name="dirnumero" placeholder="Numero" required>
+        </label>
+        <br> 
+        <label for="colonia" class="col-sm-2 control-label">Colonia:
+            <input type="text" maxlength="20" class="form-control  input-sm" id="colonia" name="colonia" placeholder="Colonia" required>
+        </label>
+
+        <label for="CP" class="col-sm-2 control-label">CP :
+            <input type="text" maxlength="60" class="form-control  input-sm" id="CP" name="CP" placeholder="Codigo Postal" required>
+        </label>
+
+        <label for="Telefono" class="col-sm-2 control-label">Telefono :
+            <input type="text" maxlength="10" class="form-control  input-sm" id="Telefono" name="Telefono" placeholder="Num Telefono" required>
+        </label>
+        
+    </div>    
+
+    <div>
+        <br>
+        <input type="button" id="boton2" name="boton2" value="Lanza Pedido" onclick="alert('Pedido Recibido');"><br><br>
+    </div>
+    <form action="./PastelIndex.html">
+        <input type="submit" value="Regresar" />
+    </form>
+    <!-- 
+    <p>Nos tomamos el arte de la pasteleria en serio, nos encantan los retos y por ello aseguramos que podemos realizar 
+        <br> el pastel de tus sueños si es que la gran variedad que tenemos, no te los cumple.
+        <br>
+        <p> Aseguramos que las materias primas  de nuestros pasteles son de la mejor calidad y por ello tambien ofrecemos anuestros clientes la posiblidad de consumirlas y practiques tus artes culinarias pasteleriles</p>
+    -->
+    <!-- Imágenes -->
+    
+    <br>
+        <img src="./images/moras.jpg" alt="Pastel de moras azules" width="80px" height="80px" />
+        <input type="checkbox" id="moras" name="moras" value="moras">
+        <label for="moras">Moras Azules____</label>
+
+        <label for="tamprecio1">Tamaño del pastel</label>
+        <select name="tamprecio1" id="tamprecio1">
+            <option value="Chico150">Chico......$150</option>
+            <option value="Mediano300">Mediano....$300</option>
+            <option value="Grande450">Grande.....$450</option>
+        </select>
+        <input type="number" id="number1" name="number1" placeholder="¿Cuántos?"><br>
+
+        <img src="./images/pastel001.jpg" alt="Pastel de Chocolate" width="80px" height="80px" />
+        <input type="checkbox" id="chocolate1" name="chocoñate1" value="Chocolate">
+        <label for="topping1">Chocolate extremo____</label>
+
+        <label for="tamprecio2">Tamaño del pastel</label>
+        <select name="tamprecio2" id="tamprecio2">
+            <option value="Chico150">Chico......$150</option>
+            <option value="Mediano300">Mediano....$300</option>
+            <option value="Grande450">Grande.....$450</option>
+        </select>
+        <input type="number" id="number2" name="number2" placeholder="¿Cuántos?"><br>
+
+        <img src="./images/Tres-Leches.jpg" alt="Pastel de Tres leches vainilla" width="80px" height="80px" />
+        <input type="checkbox" id="tresleches1" name="tresleches1" value="Treslechesvainilla">
+        <label for="topping1">Tres Leches Vainilla____</label>
+
+        <label for="tamprecio3">Tamaño del pastel</label>
+        <select name="tamprecio3" id="tamprecio3">
+            <option value="Chico150">Chico......$150</option>
+            <option value="Mediano300">Mediano....$300</option>
+            <option value="Grande450">Grande.....$450</option>
+        </select>
+        <input type="number" id="number3" name="number3" placeholder="¿Cuántos?"><br>
+
+        <img src="./images/rollo-mango2.png" alt="Rollo Mango" width="80px" height="80px" />
+        <input type="checkbox" id="RolloMango1" name="RolloMango1" value="RolloMango">
+        <label for="topping1">Rollo Mango__________</label>
+
+        <label for="tamprecio3">Tamaño del pastel</label>
+        <select name="tamprecio4" id="tamprecio4">
+            <option value="Chico150">Chico......$150</option>
+            <option value="Mediano300">Mediano....$300</option>
+            <option value="Grande450">Grande.....$450</option>
+        </select>
+        <input type="number" id="number4" name="number4" placeholder="¿Cuántos?"><br>
+
+        <img src="./images/velvet.jpg" alt="Velvet" width="80px" height="80px" />
+        <input type="checkbox" id="Velvet1" name="Velvet1" value="Velvet">
+        <label for="topping1">Velvet _______________</label>
+
+        <label for="tamprecio3">Tamaño del pastel</label>
+        <select name="tamprecio5" id="tamprecio5">
+            <option value="Chico150">Chico......$150</option>
+            <option value="Mediano300">Mediano....$300</option>
+            <option value="Grande450">Grande.....$450</option>
+        </select>
+        <input type="number" id="number5" name="number5" placeholder="¿Cuántos?"><br>
+
+        <img src="./images/diplomatico.jpg" alt="Diplomatico" width="80px" height="80px" />
+        <input type="checkbox" id="Diplomatico1" name="Diplomatico1" value="Diplomatico">
+        <label for="topping1">Diplomatico__________</label>
+
+        <label for="tamprecio3">Tamaño del pastel</label>
+        <select name="tamprecio6" id="tamprecio6">
+            <option value="Chico150">Chico......$150</option>
+            <option value="Mediano300">Mediano....$300</option>
+            <option value="Grande450">Grande.....$450</option>
+        </select>
+        <input type="number" id="number6" name="number6" placeholder="¿Cuántos?"><br>
+
+        <img src="./images/Selva-negra.jpg" alt="Selva Negra" width="80px" height="80px" />
+        <input type="checkbox" id="SelvaNeg1" name="SelvaNeg1" value="SelvaNegra">
+        <label for="topping1">Selva Negra __________</label>
+
+        <label for="tamprecio3">Tamaño del pastel</label>
+        <select name="tamprecio7" id="tamprecio7">
+            <option value="Chico150">Chico......$150</option>
+            <option value="Mediano300">Mediano....$300</option>
+            <option value="Grande450">Grande.....$450</option>
+        </select>
+        <input type="number" id="number7" name="number7" placeholder="¿Cuántos?"><br>
+
+        
+
+        <form action="./PastelIndex.html" id="form1" method="post">
+            <br>
+            <input type="button" id="boton1" name="boton1" value="Lanza Pedido" onclick="alert('Pedido Recibido');"><br><br>
+           <!--  <input type="submit" value="Submit">
+            <input type="reset">
+            -->
+        </form>
+        <form action="./PastelIndex.html">
+            <input type="submit" value="Regresar" />
+        </form>
+
+</body>
+</html>
