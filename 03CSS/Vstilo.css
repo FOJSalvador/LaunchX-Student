@@ -1,0 +1,673 @@
+* {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Definición del encabezado del documento */
+.encabezado {
+    background: linear-gradient(95deg, rgba(250, 250, 250, 0) 49.8%, rgb(221, 235,247) 55%);
+    height: 90px;
+    display:grid;
+    grid-template-columns: 4fr 1fr 1fr 1fr 1fr 2fr;
+    grid-template-rows: 80px;
+    text-align: center;
+    padding-top: 24px;
+}
+
+.vacunacion {
+    font-size: 35px;
+    color:rgb(28, 28, 119);
+
+}
+
+/*
+.vac {
+    
+    margin: 22px;     margin-left: 120px;     font-size: 30px;
+}*/
+
+.e1 {
+    font-weight:  600;
+    margin-top: 8px;
+    color:rgb(82, 62, 100);
+    font-size: 15px;
+}
+
+.noticias, .regulacion {
+    padding-right: 20px;
+}
+
+.sel {
+    font-size: larger;
+}
+
+.sel:hover {
+    cursor: pointer;
+    color:whitesmoke;
+    width: 150px;
+    height:  40px;
+    background-color: rgb(6, 41, 41);
+    border-radius: 4px;
+    transform:scale(1.10,1.10);
+    transition: .02s;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rva {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color:darkblue;
+    color:whitesmoke;
+    width: 150px;
+    height:  50px;
+    border-radius: 5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    box-shadow: 0px 5px 8px rgba(56, 30, 173, 0.3);
+    font-size: 18px;
+    margin-top: 12px;
+
+}
+
+.rva:hover {
+    transform: scale(1.1, 1.1);
+    cursor:pointer;
+
+}
+/* Termina la manipulacion del encabezado */
+/* Aqui comienza el CSS del cuerpo del documento 10 grids */
+
+body{
+    margin: 0;
+
+}
+
+/* Primer Grid o sección */
+/* Segundo Grid o sección */
+.vacunas {
+    margin-top: 2px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1.3fr 1.2fr;
+}
+
+.l-izq {
+    padding-top: 2.9rem;
+    padding-left: 7.4rem;
+    background-image: url('./Images/fondoplata.jpg');
+    background-blend-mode: soft-light;
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.l-der {
+    background-image: url('./Images/trabajadores-salud.webp');
+    height: 50rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.l-izq h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #1f3e72;
+    font-weight: 600;
+    text-transform: initial;
+    font-size: 3rem;
+    font-weight: 700;
+    width: 80%;
+    text-align: left;
+    margin-bottom: 22px;
+    line-height: 65px;
+}
+
+.cita1 {
+    margin-top: 0px;
+    color: rgb(136, 136, 136);
+    width: 380px;
+    font-size: 16px;
+    margin-bottom: 30px;
+    line-height: 30px;
+}
+
+.etiqueta1 {
+    margin-right: 0;
+    margin-left:  5px;
+    width: 400px;
+    font-size: 1.4rem;
+    display: flex;
+}
+
+.escudo {
+    color:#083a8f;
+    display: grid;
+    grid-template-columns: 25px 140px;
+    grid-template-rows: 1fr;
+    text-align: left;
+    font-size: 14px;
+    gap: 15px;
+}
+
+.estrella {
+    color:#083a8f;
+    display: grid;
+    grid-template-columns: 25px 140px;
+    grid-template-rows: 1fr;
+    text-align: left;
+    font-size: 14px;
+    gap: 15px;
+}
+
+.ss {
+    margin-top: 2px;
+}
+
+
+/* Tercer Grid o sección */
+
+.Agenda{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #083a8f;
+    position: absolute;
+    align-items: center;
+    padding-left: 0rem;
+    margin-top: -13rem;
+    margin-left: 7rem;
+    display: grid;
+    grid-template-columns: 20px 300px;
+    gap: 15px;
+}
+
+.rel01 {
+    border-radius: 0.2rem;
+    box-shadow: 0px 3px 10px #9ab5e4;
+}
+
+.reloj {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+/*Cuarta  */
+.pancarta {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 100px;
+    position: absolute;
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    padding: 1rem;
+    box-shadow: 0px 2px 8px rgba(68, 106, 233, 0.3);
+    border-radius: 1rem;
+    margin-left: 9rem;
+    margin-top: -9rem;
+    padding: 10px 40px 10px 30px ;
+}
+
+.pancarta:hover {
+    transform: scale(1.01,1.01);
+    box-shadow: 0px 10px 40px rgb(3 19 23 / 25%);
+    transition: 0.3s;
+}
+
+.local, .fec, .tip {
+    margin-top: 16px;
+    border-radius: 0.3rem;
+    box-shadow: 0px 3px 10px #b3cefd;
+}
+
+.loca, .date, .tipo {
+    font-size: 16px;
+    color: #69758b;
+    margin-right: 20px;
+}
+
+.loc, .mes .marca {
+    font-size: 18px;
+    margin-top: -7px;
+    margin-left: 10px;
+    color: #1f3e72;
+    margin-right: 20px;
+}
+
+.bsumit {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(70, 29, 218);
+    box-shadow: 0px 0px 5px rgba(24, 1, 104, 0.842);
+    color: white;
+    width: 130px;
+    height: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    margin-left: 15px;
+    margin-top: 28px;
+}
+
+.bsumit:hover {
+    transform: scale(1.05,1.05);
+    box-shadow: 0px 4px 12px rgba(49, 45, 45, 0.3);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/*Quinta  */
+.tipovacuna {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Sexta*/
+
+.porque {
+    padding-left: 7.4rem;
+}
+
+.porque h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #1f3e72;
+    text-transform: initial;
+    font-size: 2.5rem;
+    font-weight: 700;
+    width: 80%;
+    text-align: left;
+}
+
+.porque p{
+    color: #69758b;
+    width: 40%;
+    font-size: 1.3rem;
+    line-height: 35px
+}
+
+/*  Septimo */
+.cuadros {
+    margin-top: 50px;
+    padding-left: 7.5rem;
+    display: flex; 
+    flex-flow: row;
+    width: 65rem;
+    height: 300px;
+    justify-content: space-between;
+}
+
+.ya:hover{
+    transform: scale(1.05,1.05);
+    box-shadow: 0px 2px 8px rgba(68, 106, 233, 0.3);
+    transition: 0.2s;
+}
+
+.minimo, .crear, .proteger, .inmunidad {
+    
+    box-shadow: 0px 10px 50px rgba(68, 106, 233, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.topti{
+    color: #1f3e72;
+    font-size: 20px;
+    
+}
+
+.topp{
+    color: #69758b;
+    font-size: 12px;
+}
+
+/* Octavo preparacion para la vacuna */
+.Preparacion {
+    margin-top: 10px;
+    position: relative;
+    display:grid;
+    grid-template-columns: 1fr 1.3fr;
+}
+
+.p-izq{
+    background-image: url('./Images/enf_cons.webp');
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.p-der{
+    padding-top: 2rem;
+    padding-left: 5rem;
+    padding-right: 3rem;
+    background-image: url('./Images/fondoplata.jpg');
+    background-blend-mode: soft-light;
+    height: 37rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
+
+}
+
+.prep {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #1f3e72;
+    text-transform: initial;
+    font-size: 2.2rem;
+    font-weight: 700;
+    width: 100%;
+    text-align: left;
+}
+
+.exito {
+    margin-bottom: 0;
+    color: #69758b;
+    width: 78%;
+    line-height: 30px
+}
+
+.acc1{
+    margin-left: 50px;
+    margin-top: 30px;
+    width: 300px;
+}
+
+.pliegue {
+    color: #1f3e72;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    width: 380px;
+    height: 40px;
+    justify-content: space-between;
+    background-color: white;
+    border: 0px;
+    border-radius: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-shadow: 0px 10px 50px rgba(68, 106, 233, 0.1);
+}
+
+.simg{
+    border-radius: 0.3rem;
+    box-shadow: 0px 3px 10px #b3cefd;
+}
+
+.pliegue p{
+    width: 220px;
+    text-align: left;
+}
+
+.acc1{
+    margin-left: 50px;
+    margin-top: 30px;
+    width: 300px;
+}
+
+.despliegue {
+    margin-top: 0px;
+    color: #1f3e72;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    width: 380px;
+    height: 40px;
+    justify-content: space-between;
+    background-color: white;
+    border: 0px;
+    border-radius: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-shadow: 0px 10px 50px rgba(68, 106, 233, 0.1);
+}
+
+.activo, .despliegue:hover {
+    cursor: pointer;
+}
+
+.despliegue:after {
+    content: '\002B';
+    color: #1f3e72;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.activo:after {
+    content: "\2212";
+    color: #1f3e72;
+}
+
+.contenido {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    width: 350px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .4s ease-out;
+    background-color: #ffffff91;
+    box-shadow: 0px 10px 50px rgba(68, 106, 233, 0.2);
+    font-size: 11px;
+    border-radius: 5px;
+    color: #69758b;
+}
+
+.contenido p{
+    padding: 0px;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+.contenido p:hover{
+    cursor: cell;
+}
+
+/* Comienza contacto de emergencia grid 9 */
+
+.c-emergencia {
+    padding-left: 7.4rem;
+    margin-top: 7rem;
+    background-image: url(Images/fondogeometrico.jpg);
+}
+
+.c-emergencia h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #1f3e72;
+    text-transform: initial;
+    font-size: 2.5rem;
+    font-weight: 700;
+    width: 80%;
+    text-align: left;
+}
+
+.c-emergencia p{
+    color: #69758b;
+    width: 40%;
+    line-height: 30px;
+    margin-bottom: 0;
+}
+
+/* Grid 10 botones para el contacto de emergencia */
+
+.tercer{
+    margin-top: 0px;
+    position: relative;
+    display:grid;
+    grid-template-columns: 1.3fr 1fr;
+    grid-template-rows: 38rem;
+}
+
+.t-der{
+    background-image: url(Images/doctores.webp);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.t-izq{
+    padding-top: 2rem;
+    padding-left: 5rem;
+    padding-right: 3rem;
+    background-image: url(Images/fondoplata.jpg);
+    height: 38rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.contact{
+    display: grid;
+    grid-template-columns: 230px 230px;
+    grid-template-rows: 180px 180px;
+    gap: 20px;
+    
+}
+
+.thov{
+    background-color: rgba(255, 255, 255, 0.247);
+    box-shadow: 0px 10px 50px rgba(68, 106, 233, 0.15);
+    padding: 10px;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+.thov:hover{
+    transform: scale(1.05,1.05);
+    box-shadow: 0px 2px 8px rgba(68, 106, 233, 0.3);
+    /* padding-top: 0; */
+    transition: 0.2s;
+}
+
+.tertop{
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    height: 80px;
+}
+
+.tt{
+    color: #1f3e72;
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+
+.ts{
+    margin-top: 0px;
+    color: #69758b;
+    font-size: 12px;
+    margin-bottom: 0px;
+}
+
+.now{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #d2e2fc6b;
+    color: rgb(60, 47, 243);
+    width: 160px;
+    height: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    margin-left: 15px;
+    margin-top: 28px;
+    border-radius: 8px;
+}
+
+.now:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 5px rgba(100, 92, 131, 0.842);
+    background-color: rgb(60, 47, 243);
+    color: white;
+    transition: .3s;
+}
+
+/* Termina 10 */ 
+
+/* comienza el ultimo grid de la pagina */
+.footer{
+    margin: 0;
+    margin-top: 10rem;
+    background-color: #ccdfff81;
+    padding: 50px 10px 10px 20px;
+    background-color: #ccdfffd0;
+    background-image: url(assets/footfond4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.firstfoot{
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr 1fr;
+}
+
+.vacin{
+    padding-left: 6rem;
+}
+.vacun{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    color: rgb(0, 88, 189);
+}
+
+.f-der{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #1f3e72;
+}
+
+.our{
+    width: 25%;
+    font-size: 13px;
+    color: #69758b;
+    line-height: 30px;
+}
+
+.dour {
+    font-size: 13px;
+    color: #69758b;
+}
+
+.dour:hover{
+    cursor: pointer;
+    color: #1f3e72;
+    transform: scale(1.05,1.05);
+    transition: .02s;
+}
+.secondfoot{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 7rem;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.back{
+    font-size: 20px;
+    color: #1f3e72;
+}
+.back:hover {
+    cursor: pointer;
+    color: #9547df;
+    
+    transition: .02s;
+}
+
+.fdour {
+    font-size: 13px;
+    color: #69758b;
+}
+
